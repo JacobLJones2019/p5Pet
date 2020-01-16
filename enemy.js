@@ -1,10 +1,12 @@
 
 class Enemy {
-    constructor (name, health, attack, givenExp){
+    constructor (name, health, attack, speed, givenExp){
         this.name = name;
         this.health = health;
         this.attack = attack;
+        this.speed = speed;
         this.givenExp = givenExp;
+        this
     }
 }
 
@@ -19,6 +21,7 @@ let enemyList = [
                         name: "Goblin",
                         health: 10,
                         attack: 2,
+                        speed: 3,
                         givenExp: 5
                         
                     },
@@ -27,6 +30,7 @@ let enemyList = [
                         name: "Slime",
                         health: 5,
                         attack: 4,
+                        speed: 1,
                         givenExp: 5
                         
                     }

@@ -29,7 +29,7 @@ function setup() {
  cnv.position(windowWidth / 2.75, windowHeight / 4);
  image(background1, 0, 0, 300, 150);
  newHomeSprite = new HomeSprite();
- avatar = new Avatar("TestAvatar1", 10, 10);
+ avatar = new Avatar("Testy", 10, 10, 3);
 }
 
 
