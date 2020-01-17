@@ -10,4 +10,13 @@ class Avatar {
     exp = 0;
 
 
+    attackEnemy () {
+        newEnemy.health -= copyBattleAvatar.attack;
+
+    }
+
+    takeDamage(){
+
+    }
+
 }

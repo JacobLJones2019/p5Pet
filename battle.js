@@ -7,7 +7,7 @@ function beginBattle() {
     *Load Enemy Battle Sprite
     *Load Player Battle Sprite
     *Display Options / UI
-    Determine first attacker
+    *Determine first attacker
     p1 attack
     p2 lose hp
     check if battle over
@@ -24,6 +24,8 @@ function beginBattle() {
    let playerBattleSprite;
    let enemyBattleSprite;
    let copyBattleAvatar = avatar;
+   let actionTaken = false;
+   let inCombat = false;
    
    
     if(battle === true){
@@ -55,8 +57,12 @@ function beginBattle() {
 
       //Take initial action / prompt the user for input
       if(turnOrder[0].name === copyBattleAvatar.name){
-        //prompt the user
-        console.log("ATTTTTAAAAAACKKKKK");
+        inCombat = true;
+        while (inCombat){
+            let attackButton = createButton('Attack');
+            console.log(newEnemy.health);
+            inCombat = false;
+        }
       }else{
           //basic enemy AI
           console.log(turnOrder[0].name + " " + "attack's you for just all kinds of damage");
@@ -68,7 +74,8 @@ function beginBattle() {
   
 }
 
-  
+
+
 //displays in battle text
 function displayBattleText(){
     push();
